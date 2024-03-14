@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   <title>Projects</title>
 </head>
 <body>
-  <div class="header-footer">
     <header>
       <a href="/">
         <img src="../images/logo.png" alt="logo"/>
@@ -24,10 +24,6 @@
         <a href="#">
           <button>Projects</button>
         </a>
-        <!-- Uncomment the following line if needed -->
-        <!-- <a href="/">
-          <button class="header-footer btn-site-plan">Site Plan</button>
-        </a> -->
       </nav>
     </header>
     <main>
@@ -36,12 +32,24 @@
       <p>
         One of my first web application projects was the game of Snake: I built the game using p5.js and then embedded it into a blank HTML file.
       </p>
-      <div id="canvas-container">
-        <script src="snake.js"></script>
+      <div class="snake-game">
+        <div class="score-container">
+          <p class="score">Score = </p>
+          <p class="scoreNum">0</p>
+        </div>
+        <div class="highScore-container">
+          <p class="highScore">Highscore = </p>
+          <p class="highScoreNum">0</p>
+        </div>
+        <div id="snake-canvas">
+          <script src="snake.js" style="display: block;"></script>
+        </div>
       </div>
       <p>
         Once I finished the Snake game I was hooked on simple games and so I built pong: This pong game was built in the same way, p5.js, and then embedded into an HTML file.
       </p>
+      <img class="pong-game" src="/images/pong.png" alt="Image of the pong game that I made">
+      </div>
       <p>
         As I got better at HTML and CSS, I built a website for a non-existent rafting company called white water rafting, the site can be found here:
       </p>
@@ -64,6 +72,5 @@
         </a>
       </div>
     </footer>
-  </div>
 </body>
 </html>

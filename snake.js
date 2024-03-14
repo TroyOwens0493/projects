@@ -11,7 +11,8 @@ let running = true;
 
 //Create the Html canvas
 function setup() {
-  createCanvas(400, 400);
+  let cnvs = createCanvas(400, 400);
+  cnvs.parent('snake-canvas');
   frameRate(70);
   spawnApple();
   snake.push({ x: 1, y: 1});

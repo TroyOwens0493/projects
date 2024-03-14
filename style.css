@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+canvas, .pong-game {
+  border: 2px solid #ccc;
+}
+
 header {
   display: flex;
   align-items: center;
