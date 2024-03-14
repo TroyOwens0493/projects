@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap');
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header-color);
+}
+
+header img {
+  width: 10rem;
+  display: flex;
+}
+
+header h1 {
+  color: var(--primaryAccent);
+  font-weight: bold;
+  font-size: 1.875rem;
+  font-family: "Kode Mono", "Courier New", "Menlo";
+}
+
+header button {
+  font-weight: bold;
+  font-family: "Anta", "Helvetica Neue", "Verdana";
+  color: var(--secondaryAccent);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-radius: 7px;
+  margin-right: 0.5rem;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: var(--primaryAccent);
+  background-color: var(--header-color);
+}
+
+header button:hover {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-color: var(--secondaryColor);
+  background-color: var(--primaryAccent);
+}
+
+footer {
+  display: grid;
+  height: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--header-color)
+}
+
+.social {
+  text-align: right;
+}
+
+footer a {
+  padding: 20px 10px;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 245, 245, 245;
+  --header-color: #3C8BBB;
+  --header-text: #202B37;
+  --primaryColor: #3C8BBB;
+  --secondaryColor: #202B37;
+  --primaryAccent: #44AFF5;
+  --secondaryAccent: #3C8BBB;
+}
+
+main p {
+  font-family: "Kode Mono", "Courier New", "Menlo";
+}
+
+main h3, main h4 {
+  font-family: "Kode Mono", "Courier New", "Menlo";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+    --header-color: #202B37;
+    --header-text: #3C8BBB;
+    --primaryColor: #3C8BBB;
+    --secondaryColor: #202B37;
+    --primaryAccent: #44AFF5;
+    --secondaryAccent: #3C8BBB;
+  }
+}
