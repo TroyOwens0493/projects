@@ -13,7 +13,7 @@ canvas, .pong-game {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: var(--header-color);
 }
 
@@ -23,26 +23,32 @@ header img {
 }
 
 header h1 {
-  color: var(--primaryAccent);
+  color: var(--header-text);
   font-weight: bold;
   font-size: 1.875rem;
   font-family: "Kode Mono", "Courier New", "Menlo";
+  padding-left: 1.25rem;
+  margin: 0px;
 }
 
 header button {
   font-weight: bold;
   font-family: "Anta", "Helvetica Neue", "Verdana";
-  color: var(--secondaryAccent);
+  color: var(--header-text);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  border-radius: 7px;
-  margin-right: 0.5rem;
+  border-radius: .5rem;
+  margin-right: 1.25rem;
   border-style: solid;
-  border-width: 0.125rem;
+  border-width: 2px;
   border-color: var(--primaryAccent);
   background-color: var(--header-color);
+}
+
+header nav {
+  margin-left: auto;
 }
 
 header button:hover {
@@ -54,6 +60,10 @@ header button:hover {
   background-color: var(--primaryAccent);
 }
 
+footer a {
+  color: var(--header-text);
+}
+
 footer {
   display: grid;
   height: 50px;
@@ -63,10 +73,9 @@ footer {
 
 .social {
   text-align: right;
-}
-
-footer a {
-  padding: 20px 10px;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 :root {
