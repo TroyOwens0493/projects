@@ -54,8 +54,8 @@ header nav {
 button:hover {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-bottom: 0.61rem;
+  padding-top: 0.61rem;
   border-color: var(--secondaryColor);
   background-color: var(--primaryAccent);
 }
