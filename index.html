@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   <title>Projects</title>
 </head>
@@ -27,48 +30,54 @@
       </nav>
     </header>
     <main>
-      <h3>Projects</h3>
-      <h4>Here are some of by beginner projects</h4>
-      <p>
-        One of my first web application projects was the game of Snake: I built the game using p5.js and then embedded it into a blank HTML file.
-      </p>
-      <div class="snake-game">
-        <div class="score-container">
-          <p class="score">Score = </p>
-          <p class="scoreNum">0</p>
+      <div class="padding">
+        <h3>Projects</h3>
+        <h4>Here are some of by beginner projects:</h4>
+        <p>
+          One of my first web application projects was this game of Snake: I built the game using p5.js and then embedded it into a blank HTML file.
+        </p>
+        <div class="snake-game">
+          <div class="snake-score-container">
+            <div class="score-container">
+              <h4 class="score">Score</h4>
+              <p class="scoreNum">0</p>
+            </div>
+            <div class="highScore-container">
+              <h4 class="highScore">Highscore</h4>
+              <p class="highScoreNum">0</p>
+            </div>
+          </div>
+          <div id="snake-canvas">
+            <script src="snake.js" style="display: block;"></script>
+          </div>
         </div>
-        <div class="highScore-container">
-          <p class="highScore">Highscore = </p>
-          <p class="highScoreNum">0</p>
-        </div>
-        <div id="snake-canvas">
-          <script src="snake.js" style="display: block;"></script>
-        </div>
+        <p>
+          Once I finished the Snake game I was hooked on simple games and so I built pong: This pong game was built in the same way, p5.js, and then embedded into an HTML file.
+        </p>
+        <img class="pong-game" src="./images/pong.png" alt="Image of the pong game that I made">
+        <p>
+          As I got better at HTML and CSS, I built a website for a non-existent rafting company called Water Works Rafting, the site can be found here:
+        </p>
+        <a href="https://troyowens0493.github.io/WDD130/official_page/">
+          <button>Water works rafting</button>
+        </a>
+        <h4>Professional experience:</h4>
+        <p>
+          In my current role, I've undertaken several impactful projects that have streamlined processes and enhanced efficiency. One notable project involved developing a <strong>Google Apps script at Paywut</strong>, which facilitated the rapid duplication of products imported from our Shopify store, significantly expediting auction preparations. Recognizing the effectiveness of this solution, my supervisor entrusted me with additional responsibilities, including the creation of another <strong>app script to streamline email management</strong>. This script efficiently identified and segmented new emails within our database, optimizing our marketing efforts. Furthermore, upon demonstrating continued success, I was tasked by senior management to rebuild the product duplication app script as a native <strong>Shopify application</strong>. The successful development and implementation of this app not only improved user experience but also garnered positive feedback from those who work with me. These experiences have honed my skills in scripting and application development while reinforcing my commitment to delivering innovative solutions.
+        </p>
       </div>
-      <p>
-        Once I finished the Snake game I was hooked on simple games and so I built pong: This pong game was built in the same way, p5.js, and then embedded into an HTML file.
-      </p>
-      <img class="pong-game" src="./images/pong.png" alt="Image of the pong game that I made">
-      </div>
-      <p>
-        As I got better at HTML and CSS, I built a website for a non-existent rafting company called white water rafting, the site can be found here:
-      </p>
-      <h4>Professional experience</h4>
-      <p>
-        In my current role, I've undertaken several impactful projects that have streamlined processes and enhanced efficiency. One notable project involved developing a Google Apps script at Paywut, which facilitated the rapid duplication of products imported from our Shopify store, significantly expediting auction preparations. Recognizing the effectiveness of this solution, my supervisor entrusted me with additional responsibilities, including the creation of another app script to streamline email management. This script efficiently identified and segmented new emails within our database, optimizing our marketing efforts. Furthermore, upon demonstrating continued success, I was tasked by senior management to rebuild the product duplication app script as a native Shopify application. The successful development and implementation of this app not only improved user experience but also garnered positive feedback from those who work with me. These experiences have honed my skills in scripting and application development while reinforcing my commitment to delivering innovative solutions.
-      </p>
     </main>
     <footer>
       <div class="links">
-        <a href="/site-plan" style="padding-left: 1.25rem; padding-right: 1.25rem;">Site Plan</a>
-        <a href="#"">Contact Me</a>
+        <a href="/site-plan">Site Plan</a>
+        <a href="#">Contact Me</a>
       </div>
       <div class="social">
         <a href="https://www.facebook.com/">
-          <i class="fa-brands fa-square-facebook fa-2xl"></i>
+          <i class="fa-brands fa-square-facebook"></i>
         </a>
         <a href="https://www.linkedin.com/">
-          <i class="fa-brands fa-linkedin fa-2xl"></i>
+          <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
     </footer>
